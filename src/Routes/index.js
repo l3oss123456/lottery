@@ -1,11 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  // Route,
+  Switch,
+} from "react-router-dom";
 import GuardRoutes from "./guardRoutes";
-import Login from "../Pages/Login";
+// import Login from "../Pages/Login";
 import Home from "../Pages/Home";
-import AboutUs from "../Pages/Aboutus";
-import Contact from "../Pages/Contact";
-import ScrollToAnimation from "../Pages/ScrollToAnimation";
+// import AboutUs from "../Pages/Aboutus";
+// import Contact from "../Pages/Contact";
+// import ScrollToAnimation from "../Pages/ScrollToAnimation";
 
 const Routes = () => {
   return (
@@ -26,13 +30,20 @@ const Routes = () => {
           component={Home}
           // allowRole={["แอดมิน", "ผู้แก้ไข", "ผู้อ่าน"]}
         />
-        <GuardRoutes exact path="/about-us" component={AboutUs} />
-        <GuardRoutes exact path="/contact" component={Contact} />
+
         <GuardRoutes
+          exact
+          path="*"
+          component={Home}
+          // allowRole={["แอดมิน", "ผู้แก้ไข", "ผู้อ่าน"]}
+        />
+        {/* <GuardRoutes exact path="/about-us" component={AboutUs} /> */}
+        {/* <GuardRoutes exact path="/contact" component={Contact} /> */}
+        {/* <GuardRoutes
           exact
           path="/animationOnScroll"
           component={ScrollToAnimation}
-        />
+        /> */}
       </Switch>
     </Router>
   );

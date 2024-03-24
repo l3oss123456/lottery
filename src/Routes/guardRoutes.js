@@ -1,10 +1,13 @@
 // @flow
 import React from "react";
-import { Route, Redirect } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { notification } from "antd";
-import * as R from "ramda";
-import { Strings } from "../Services/Utils/Locals";
+import {
+  // Redirect,
+  Route,
+} from "react-router-dom";
+// import { useSelector } from "react-redux";
+// import { notification } from "antd";
+// import * as R from "ramda";
+// import { Strings } from "../Services/Utils/Locals";
 import Layout from "../Layout/Navigator";
 
 // type Props = {

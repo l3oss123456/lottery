@@ -45,7 +45,8 @@ export default {
     justify-content: center;
     align-items: center;
     width: 60px;
-    height: 50px;
+    height: 60px;
     margin: 0px 2px;
+    font-size: ${(props) => props.theme.fontSize.title};
   `,
 };

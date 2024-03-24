@@ -22,7 +22,7 @@ export default {
     transition: all 0.5s ease-out;
 
     @media ${responsive.xs} {
-      padding: 80px 8% 20px;
+      padding: 120px 8% 20px;
     }
   `,
   MenuContainer: styled.div`
@@ -55,7 +55,7 @@ export default {
     cursor: pointer;
 
     @media ${responsive.md} {
-      display: none;
+      // display: none;
     }
   `,
   MenuSection: styled.div`

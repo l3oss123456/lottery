@@ -11,4 +11,11 @@ export default {
       height: 60,
     },
   },
+  banner: {
+    home: {
+      image: require("../Assets/Images/banner/home_banner.png"),
+      width: "auto",
+      height: "auto",
+    },
+  },
 };

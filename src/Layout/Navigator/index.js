@@ -229,11 +229,11 @@ const Layout = ({ children }) => {
       <Styles.MenuContainer>
         {renderLogo()}
         <div style={{ display: `flex`, alignItems: "center" }}>
-          {renderMenu()}
-          {renderHamburgerMenu()}
-          {renderLanguageDropdown()}
-          {renderThemeDropdown()}
-          {renderLogoutBtn()}
+          {/* {renderMenu()} */}
+          {/* {renderHamburgerMenu()} */}
+          {/* {renderLanguageDropdown()} */}
+          {/* {renderThemeDropdown()} */}
+          {/* {renderLogoutBtn()} */}
         </div>
       </Styles.MenuContainer>
 
